@@ -19,6 +19,23 @@ const routes: Routes = [
     path: 'map',
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
+  {
+    path: 'almacenamiento',
+    loadChildren: () => import('./almacenamiento/almacenamiento.module').then( m => m.AlmacenamientoPageModule)
+  },
+  {
+    path: 'camara',
+    loadChildren: () => import('./camara/camara.module').then( m => m.CamaraPageModule)
+  },
+  {
+    path: 'ruta',
+    loadChildren: () => import('./ruta/ruta.module').then( m => m.RutaPageModule)
+  },
+  {
+    path: 'planificacion',
+    loadChildren: () => import('./planificacion/planificacion.module').then( m => m.PlanificacionPageModule)
+  },
+  
 ];
 @NgModule({
   imports: [

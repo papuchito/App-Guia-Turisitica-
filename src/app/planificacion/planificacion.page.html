@@ -1,15 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>Planificacion</ion-title>
+    <ion-title>Planificación de Rutas</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
-   
-  
-  
-    
+  <ion-item>
+    <ion-label position="stacked">Lugar de Origen</ion-label>
+    <ion-input type="text" [(ngModel)]="lugarOrigen"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Lugar de Destino</ion-label>
+    <ion-input type="text" [(ngModel)]="lugarDestino"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="planificarRuta()">Planificar Ruta</ion-button>
+
+  <ion-card *ngIf="rutaPlanificada">
+    <ion-card-header>
+      Información de la Ruta
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Tiempo estimado de llegada:</strong> {{ tiempoEstimado }}</p>
+      <p><strong>Condiciones climáticas:</strong> {{ clima }}</p>
+    </ion-card-content>
+    <ion-button expand="full" color="primary" href="https://www.google.com.do/maps/@18.5007207,-69.9925451,14z?hl=es&entry=ttu" target="_blank">Determinar Tu Ruta Planificada </ion-button>
     <ion-button [routerLink]="['/home']" expand="block" color="danger" class="next-button">Inicio</ion-button>
-  </ion-content>
+    
+  </ion-card>
+
+</ion-content>
+
+

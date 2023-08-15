@@ -1,0 +1,14 @@
+/* Estilos para el enlace */
+a.image-link {
+    display: inline-block;
+    text-decoration: none; /* Quita la subrayado del enlace */
+    border: none; /* Quita el borde del enlace */
+  }
+  
+  /* Estilos para la imagen */
+  a.image-link img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados a la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra a la imagen */
+  }
+  

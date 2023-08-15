@@ -8,10 +8,6 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'registration',
-    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
-  },
-  {
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
@@ -24,16 +20,20 @@ const routes: Routes = [
     loadChildren: () => import('./almacenamiento/almacenamiento.module').then( m => m.AlmacenamientoPageModule)
   },
   {
-    path: 'camara',
-    loadChildren: () => import('./camara/camara.module').then( m => m.CamaraPageModule)
-  },
-  {
     path: 'ruta',
     loadChildren: () => import('./ruta/ruta.module').then( m => m.RutaPageModule)
   },
   {
     path: 'planificacion',
     loadChildren: () => import('./planificacion/planificacion.module').then( m => m.PlanificacionPageModule)
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
   
 ];

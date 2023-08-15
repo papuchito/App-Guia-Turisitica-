@@ -1,6 +1,9 @@
 <ion-header>
-  <script src="https://kit.fontawesome.com/f97fcd2c02.js" crossorigin="anonymous"></script>
+
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png" alt="Imagen" width="40" height="40" />
+    </ion-buttons>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -11,18 +14,22 @@
    
   
   
-  <ion-button expand="full" color="primary" href="https://www.google.com/maps/d/u/0/viewer?mid=13kxZTfA8HyYkBbNgwPsFtBvQbEU&hl=en_US&ll=51.06901644770975%2C131.484375&z=2" target="_blank">detectar la ubicación actual </ion-button>
+  <ion-button expand="full" color="primary" href="https://www.google.com/maps/d/u/0/viewer?mid=13kxZTfA8HyYkBbNgwPsFtBvQbEU&hl=en_US&ll=51.06901644770975%2C131.484375&z=2" target="_blank">Detectar la ubicación actual </ion-button>
 
     <ion-button [routerLink]="['/camera']" expand="block" color="danger" class="next-button">Siguiente</ion-button>
   </ion-content>
   <ion-content>
     <i class="fa-solid fa-arrows-rotate fa-spin fa-2xs" style="color: #511f29;"></i>
     <a href="https://es.wikiloc.com/rutas/outdoor/republica-dominicana" target="_blank">
-      <img width="10000000" style="margin: 0 auto;" src="assets/img/tu.jpg" alt="Imagen Clickeable">
+      <img width="300" style="margin: 10 auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png" alt="Imagen Clickeable">
     </a>
   </ion-content>
   
 <ion-content>
   <div #map id="map"></div>
 </ion-content>
-
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Compa Tours</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -37,3 +37,15 @@
   height: auto;
   margin: 0 auto;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los botones */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 20px; /* Margen superior */
+}
+
+ion-button {
+  flex: 1; /* Distribuye el espacio disponible equitativamente entre los botones */
+  max-width: 150px; /* Ancho máximo para los botones */
+}
